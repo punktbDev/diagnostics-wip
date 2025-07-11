@@ -29,7 +29,7 @@
 | Диагностика "Исследование ценностей"                   | 13  | /exploring-values.html              |
 | Диагностика "Учебная мотивация"                        | 14  | /learning-motivation.html           |
 | Диагностика жизнестойкости (WIP)                       | 15  | /viability.html                     |
-| Диагностики "10 вопросов" (WIP)                        | 16  | /10-questions.html                  |
+| Диагностика "10 вопросов" (WIP)                        | 16  | /10-questions.html                  |
 | Диагностика "Я на работе" (WIP)                        | 17  | /im-at-work.html                    |
 | Конец тестирования                                     |     | /testing-end.html                   |
 | Политика конфиденциальности                            |     | /policy.html                        |
