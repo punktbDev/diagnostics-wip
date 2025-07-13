@@ -1,9 +1,11 @@
 ## Домены
 
 Новый github-pages
+
 - Пункт Б: https://diag.punkt-b.pro
 
 (Перестал работать в рф)
+
 - Vercel: https://testing-punkt-b.vercel.app
 
 ## Страницы
@@ -31,5 +33,5 @@
 | Диагностика жизнестойкости (WIP)                       | 15  | /viability.html                     |
 | Диагностика "10 вопросов" (WIP)                        | 16  | /10-questions.html                  |
 | Диагностика "Я на работе" (WIP)                        | 17  | /im-at-work.html                    |
-| Конец тестирования                                     |     | /testing-end.html                   |
+| Конец тестирования                                     |     | ../testing-end.html                 |
 | Политика конфиденциальности                            |     | /policy.html                        |
