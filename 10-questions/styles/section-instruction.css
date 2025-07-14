@@ -44,7 +44,6 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    position: relative;
 }
 
 .section-instruction__row div:nth-of-type(1) {
@@ -54,15 +53,12 @@
     box-sizing: border-box;
 }
 
-.section-instruction__row div:nth-of-type(1)::before {
-    content: "";
+.section-instruction__row div:nth-of-type(1) {
     width: 448px;
     height: 448px;
-    position: absolute;
-    bottom: 0;
     left: 0;
     background-image: url("../assets/instruction-1.png");
-    background-position: bottom left;
+    background-position: top left;
     background-repeat: no-repeat;
 }
 
@@ -74,15 +70,11 @@
     margin-top: auto;
 }
 
-.section-instruction__row div:nth-of-type(2)::before {
-    content: "";
+.section-instruction__row div:nth-of-type(2) {
     width: 388px;
     height: 388px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
     background-image: url("../assets/instruction-2.png");
-    background-position: bottom left;
+    background-position: top left;
     background-repeat: no-repeat;
 }
 
