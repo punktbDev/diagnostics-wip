@@ -207,15 +207,19 @@ $("#button-end").on("click tap", () => {
         }
     }
 
-    function summarize(directQuestions) {
+    function summarize(directQuestions, reverseQuestions=[]) {
         let result = 0
 
         // Суммируем баллы прямых вопросов (вес от 0 до 6)
         directQuestions.forEach(id => { result += answ[id].weight })
+
+        // Суммируем баллы обратных вопросов (реверсивный вес, то есть из 6 вычитаем вес)
+        reverseQuestions.forEach(id => { result += (6 - answ[id].weight) })
         return result
     }
 
-    let emotionalExhaustion = summarize([1, 2, 3, 6, 8, 13, 14, 16, 20]) // Максимум 54
+    // Только 6 вопрос оценивается обратным образом
+    let emotionalExhaustion = summarize([1, 2, 3, 8, 13, 14, 16, 20], [6]) // Максимум 54
     let depersonalization = summarize([5, 10, 11, 15, 22]) // Максимум 30
     let reductionProfessionalism = summarize([4, 7, 9, 12, 17, 18, 19, 21]) // Максимум 48
     let burnout = computeBurnout(emotionalExhaustion, depersonalization, reductionProfessionalism).toFixed(3)
@@ -243,7 +247,7 @@ $("#button-end").on("click tap", () => {
             "date": Date.now() // Дата текущего прохождения
         },
         "in_archive": false,
-        "is-phone-adult": false,
+        // "is_phone_adult": false, // Во взрослой не передаем это поле
         "date": Date.now() // Дата последней активности
     }
 
