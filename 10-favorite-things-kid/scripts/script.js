@@ -61,7 +61,7 @@ $("#button-end").on("click tap", () => {
 
     // Получаем информацию о пользователе
     let userFormData = JSON.parse(localStorage.getItem("userFormData"))
-    
+
     // Массив который отправиться
     let sendData = {
         "manager_id": parseInt(URLParams["manager-id"]),
@@ -75,7 +75,7 @@ $("#button-end").on("click tap", () => {
             "date": Date.now() // Дата текущего прохождения
         },
         "in_archive": false,
-        "is-phone-adult": userFormData.formPhoneParents,
+        "is_phone_adult": userFormData.formPhoneParents,
         "date": Date.now() // Дата последней активности
     }
     

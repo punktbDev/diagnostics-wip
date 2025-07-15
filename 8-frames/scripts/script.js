@@ -76,7 +76,7 @@ $("#button-end").on("click tap", () => {
             "date": Date.now() // Дата текущего прохождения
         },
         "in_archive": false,
-        "is-phone-adult": false,
+        // "is_phone_adult": false, // Во взрослой не передаем это поле
         "date": Date.now() // Дата последней активности
     }
     
