@@ -120,3 +120,15 @@
         padding-right: 60px;
     }
 }
+
+@media screen and (max-width: 370px) {
+    .section-instruction-1::after {
+        content: "";
+        width: 173px;
+        height: 140px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-image: url("../assets/instruction-1-phone.png");
+    }
+}
