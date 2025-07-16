@@ -207,6 +207,7 @@ $("#button-end").on("click tap", () => {
         },
         "in_archive": false,
         "is_phone_adult": userFormData.formPhoneParents,
+        "contact_permission": true,
         "date": Date.now() // Дата последней активности
     }
 
